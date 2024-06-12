@@ -1,0 +1,73 @@
+.kendo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f4f4;
+  overflow-x: hidden; // Prevent horizontal overflow
+
+  .header-grid {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px; // Set a max width to prevent overflow
+    justify-content: space-between; // Distribute space evenly between items
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column; // Changed from row to column for better layout
+    justify-content: center;
+    flex: 1; // Allow content to flex and fill available space
+    padding: 20px; // Add padding for spacing
+
+    h2 {
+      margin: 10px 0;
+      font-size: 2em;
+      color: #000000;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #000000;
+    }
+
+    .k-card-subtitle {
+      font-size: 1.5em; // Adjusted to be more readable
+      color: #357AB8;
+      margin-bottom: 10px;
+    }
+
+    .k-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #ffffff;
+      background-color: #4a90e2;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #357ab8;
+      }
+    }
+  }
+
+  .header-image {
+    flex: 1; // Allow image to flex and fill available space
+    display: flex;
+    justify-content: center; // Center the image
+    align-items: center; // Center the image
+    padding: 20px; // Add padding for spacing
+
+    .k-card-image {
+      width: 100%;
+      max-width: 400px; // Limit the maximum width of the image
+      height: auto; // Maintain aspect ratio
+      border-radius: 10px; // Adjusted for better look
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
